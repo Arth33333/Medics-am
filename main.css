@@ -1,3 +1,36 @@
+:root {
+  --color-dark: #050b20;
+  --color-light: #405ff2;
+  --color-accent-dark: #3d923a;
+  --color-accent-light: #00b67a;
+  --color-black: #000000;
+  --color-grey-1: #333333;
+  --color-grey-2: #666666;
+  --color-grey-3: #888888;
+  --color-grey-4: #dddddd;
+  --color-grey-5: #eeeeee;
+  --color-white: #ffffff;
+
+  --family-main: "DM Sans", sans-serif;
+  --family-sec: "Bebas Neue", sans-serif;
+
+  --font-3xs: 12px;
+  --font-2xs: 14px;
+  --font-xs: 16px;
+  --font-s: 18px;
+  --font-m: 20px;
+  --font-l: 24px;
+  --font-xl: 32px;
+  --font-2xl: 40px;
+  --font-3xl: 72px;
+
+  --radius-s: 4px;
+  --radius-m: 8px;
+  --radius-l: 16px;
+  --radius-full: calc(infinity * 1px);
+
+  --transition: 0.3s;
+}
 * {
   margin: 0;
   padding: 0;
