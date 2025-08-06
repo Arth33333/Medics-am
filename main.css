@@ -1,8 +1,8 @@
 :root {
-  --color-dark: #050b20;
-  --color-light: #405ff2;
-  --color-accent-dark: #3d923a;
-  --color-accent-light: #00b67a;
+  --color-dark: #000022;
+  --color-mid: #003c7d;
+  --color-light: #5cceff;
+  --color-accent-: #ffc300;
   --color-black: #000000;
   --color-grey-1: #333333;
   --color-grey-2: #666666;
@@ -11,8 +11,10 @@
   --color-grey-5: #eeeeee;
   --color-white: #ffffff;
 
-  --family-main: "DM Sans", sans-serif;
-  --family-sec: "Bebas Neue", sans-serif;
+  --gradient-bg: linear-gradient(#4ff, #4cf);
+
+  --family-main: sans-serif;
+  --family-sec: Monospace;
 
   --font-3xs: 12px;
   --font-2xs: 14px;
@@ -35,4 +37,98 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background: radial-gradient(
+    circle at 30% 50%,
+    var(--color-light),
+    var(--color-mid)
+  );
+  font-family: var(--family-main);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+button {
+  border: none;
+  background: none;
+  border-radius: 0;
+  font-family: inherit;
+}
+
+input,
+textarea {
+  border: none;
+  outline-color: var(--color-light);
+  font-family: inherit;
+  resize: none;
+}
+.container {
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
+  max-width: 1600px;
+}
+.header {
+  height: 4em;
+}
+.header_wrap {
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  padding: 0 1em;
+  border-radius: var(--radius-full);
+}
+.header_logo {
+  height: 60%;
+}
+.header_logo img {
+  height: 100%;
+}
+.header_nav {
+}
+.header_list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  white-space: nowrap;
+  gap: 1.5em;
+  color: #003c7d;
+}
+.header_item {
+  transition: 0.3s;
+}
+.header_item:hover {
+  scale: 1.1;
+  letter-spacing: 1px;
+  transition: 0.3s;
+}
+.header_link {
+}
+.header_account {
+  transition: 0.3s;
+  display: flex;
+  color: #003c7d;
+  gap: 1em;
+}
+.header_account:hover {
+  scale: 1.1;
+  letter-spacing: 1px;
+  transition: 0.3s;
+}
+.header_signin {
+}
+.header_signup {
 }
